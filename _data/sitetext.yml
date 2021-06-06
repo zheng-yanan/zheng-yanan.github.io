@@ -1,0 +1,56 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    # title: Welcome to my Website!
+    text: Yanan Zheng
+    # button: Tell Me More
+    # buttonlink: "#services"
+
+  about:
+    title: "ABOUT ME"
+    text: "our story"
+    section: about
+
+  education:
+    title: "EDUCATION"
+    text: "education"
+    section: education
+
+  publications:
+    title: "PUBLICATIONS"
+    text: "publications"
+    section: publications
+
+  blogs:
+    title: "blogs"
+    section: portfolio
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com/zyanan93
+        icon: "fab fa-twitter"
+      # - url: https://linkedin.com
+      #  icon: "fab fa-linkedin-in"
+      - url: https://github.com/zheng-yanan
+        icon: "fab fa-github"
+      # - url: https://instagram.com
+      #  icon: "fab fa-instagram"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
